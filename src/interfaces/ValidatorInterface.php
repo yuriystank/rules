@@ -14,6 +14,12 @@ interface ValidatorInterface
     public function validate();
 
     /**
+     * @param ValidationRuleInterface $rule
+     * @return mixed
+     */
+    public function setValidationRule(ValidationRuleInterface $rule);
+
+    /**
      * @return ValidationRuleInterface[]
      */
     public function getValidationRules();
